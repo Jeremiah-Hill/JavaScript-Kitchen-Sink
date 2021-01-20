@@ -1,11 +1,24 @@
-var name = 'Jeremiah';
-const states = 50;
-var sum = 4 + 5;
+//My name
+let myName = 'Jeremiah';
+
+console.log(myName)
+
+
+// Number of states
+const numOfStates = 50;
+
+console.log(numOfStates)
+
+// Adds 4 and 5
+let sum = 4 + 5;
+
+console.log(sum)
 
 // Alerts 'Hello World'
 function sayHello() {
     alert('Hello World');
 };
+
 sayHello();
 
 // Checks if age is greater than 21 to view the page
@@ -21,26 +34,22 @@ checkAge('James', 18);
 checkAge('John', 17);
 
 // Array of my favorite vegetables
-var myFavVegs = ['Broccoli', 'Jalapeno', 'Green Beans', 'Potatoes', 'Sweet Potato'];
+let myFavVegs = ['Broccoli', 'Jalapeno', 'Green Beans', 'Potatoes', 'Sweet Potato'];
 
 // Uses loop to display my favorite vegetables
-for (var i = 0; i < myFavVegs.length; i++) {
+for (let i = 0; i < myFavVegs.length; i++) {
     console.log(myFavVegs[i]);
 };
 
 // Create an object named pet
-function pet(name, breed) {
-    var namebreed = [
-    { name: 'Midnight', breed: 'Maine Coon' },
-    { name: 'Milo', breed: 'British Shorthair' },
-    { name: 'Lemmy', breed: 'Siamese' },
-    { name: 'Sylvester', breed: 'Russian Blue' },
-    { name: 'William', breed: 'Munchkin' }
-    ]
-}
+let pet = {
+     name: 'Midnight', breed: 'Maine Coon'
+};
+
+console.log(pet.name, pet.breed)
 
 // Create an array of 5 objects
-var nameAge = [
+let nameAge = [
     { name: 'Sally', age: 24 },
     { name: 'Mike', age: 17 },
     { name: 'Julie', age: 18 },
@@ -49,7 +58,7 @@ var nameAge = [
 ];
 
 // Loops through array to call checkAge function
-for (var i = 0; i < nameAge.length; i++) {
+for (let i = 0; i < nameAge.length; i++) {
     checkAge(nameAge[i].name, nameAge[i].age);
 };
 
