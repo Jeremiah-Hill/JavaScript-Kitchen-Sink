@@ -3,7 +3,6 @@ let myName = 'Jeremiah';
 
 console.log(myName)
 
-
 // Number of states
 const numOfStates = 50;
 
